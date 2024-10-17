@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> website name </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Contact Us</h1>
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="contact.html">Contact us</a></li>
+    <li><a href="videos.html">Videos </a></li>
+  </ul>
+
+  <h3>Contact Form</h3>
+
+  <div class="container">
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <!--your code for button submit should be here in side the form, but beacuse you have to use java script to activite the functionality, you will not send the information any where! you will want to disaple the submit button and maybe give a windows pop up alret that the inormation have been submitted! -->
+    </form>
+    <button onclick="myalert()">submit</button>
+
+    <!--allowing the pop up window to show up-->
+    <script>
+      function myalert() {
+        alert("Thank you for your submission! ");
+      } 
+    </script>
+  </div>
+  
+</body>
+
+</html>
